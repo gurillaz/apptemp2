@@ -19,6 +19,8 @@
 
         body {
             height:100vh;
+            max-height: 100vh;
+            overflow: hidden;
             background: rgb(240,243,244);
 background: -moz-linear-gradient(0deg, rgba(240,243,244,1) 0%, rgba(255,255,255,1) 100%);
 background: -webkit-linear-gradient(0deg, rgba(240,243,244,1) 0%, rgba(255,255,255,1) 100%);
@@ -26,18 +28,18 @@ background: linear-gradient(0deg, rgba(240,243,244,1) 0%, rgba(255,255,255,1) 10
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f3f4",endColorstr="#ffffff",GradientType=1);
         }
 
-        .footer {
+        /* .footer {
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
 
-        }
+        } */
     </style>
 </head>
 
 <body>
-    <nav class="navbar pt-3 bg-transparent animate__animated animate__fadeInDown animate__slow">
+    <nav class="navbar pt-3 bg-transparent animate__animated animate__fadeInDown animate__slow" style="max-height:52px; overflow: hidden;;">
         <div class="container">
             <svg xmlns="http://www.w3.org/2000/svg" width="100"  viewBox="0 0 130 46.478">
                 <path id="Path_8" data-name="Path 8"
@@ -49,9 +51,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f3f4",endCo
                     href="mailto:info@autopjesepartner.com">Email</a></span>
         </div>
     </nav>
-    <div class="container">
+    <div class="container" style="height: calc(100vh - 52px - 30px);">
 
-        <div class="row align-items-center" style="height: 75vh">
+        <div class="row align-items-center pt-3 pb-3" style="height: 100%;">
             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="85%" viewBox="0 0 240.845 161.061">
                     <g id="undraw_work_together_h63l_1_" data-name="undraw_work_together_h63l (1)"
@@ -327,7 +329,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f3f4",endCo
                     <div class="row">
                         <div class="col text-center">
                             <p id="message"
-                                style="font-size:24px; font-weight: 600; line-height: 1.1em; letter-spacing: 0.35px;">
+                                style="font-size:22px; font-weight: 600; line-height: 1.0em; letter-spacing: 0.35px;">
                                 Faqja është duke u pregatitur</p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" viewBox="0 0 70 10">
                                 <path id="Path_127" data-name="Path 127"
@@ -344,7 +346,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f3f4",endCo
                         <div class="col text-center" style="max-width: 150px;">
                             <a href="https://www.facebook.com/AutoPjesePartner/">
                                 <svg class="mb-2 animate__animated animate__pulse animate__repeat-3 animate__slower animate__delay-5s"
-                                    id="facebook-icon" xmlns="http://www.w3.org/2000/svg" width="80"
+                                    id="facebook-icon" xmlns="http://www.w3.org/2000/svg" width="70"
                                     viewBox="0 0 100 100.001">
                                     <path id="Path_9" data-name="Path 9"
                                         d="M94.481,100A5.519,5.519,0,0,0,100,94.482V5.519A5.519,5.519,0,0,0,94.481,0H5.519A5.518,5.518,0,0,0,0,5.519V94.481A5.519,5.519,0,0,0,5.519,100H94.481Z"
@@ -364,7 +366,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f3f4",endCo
                             <a href="https://www.instagram.com/autopjesepartner/">
                                 <svg class="mb-2 animate__animated animate__pulse animate__repeat-3 animate__slower animate__delay-4s"
                                     id="instagram-2-1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="80" viewBox="0 0 100 100">
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="70" viewBox="0 0 100 100">
                                     <defs>
                                         <radialGradient id="radial-gradient" cx="0.065" cy="0.978" r="1.27"
                                             gradientTransform="translate(0)" gradientUnits="objectBoundingBox">
@@ -399,7 +401,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f3f4",endCo
         </div>
     </div>
 
-    <footer class="footer text-center">
+    <footer class="footer text-center" style="max-height: 30px; overflow: hidden;">
         <p class="m-1 text-muted animate__animated animate__fadeIn animate__slow">Autopjesë PARTNER 2020</p>
 
     </footer>
